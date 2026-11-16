@@ -27,6 +27,25 @@ Baixe o `RiseModerCooller-Setup.exe` na página de [Releases](../../releases/lat
 Para o modo **Temperatura** é preciso o driver [PawnIO](https://pawnio.eu) instalado.
 Os modos Nome e Relógio funcionam sem ele.
 
+### ⚠️ "O controle inteligente de aplicativos bloqueou um aplicativo"
+
+O RiseModer Cooller é um projeto open-source **sem assinatura digital** (certificados de assinatura de código são pagos).
+Por isso o **Controle Inteligente de Aplicativos** (*Smart App Control*) do Windows 11 e o **SmartScreen**
+podem bloquear o instalador ou o programa, avisando que "não conseguimos verificar seu fornecedor".
+
+Isso **não significa que o arquivo tem vírus**: o Windows só bloqueia programas novos que ainda não têm reputação.
+Todo o código está aqui no repositório e você pode compilar sozinho (veja [Compilar](#compilar)).
+
+O que fazer:
+
+- **SmartScreen** ("O Windows protegeu o computador"): clique em **Mais informações → Executar assim mesmo**.
+- **Controle Inteligente de Aplicativos**: não tem botão de "executar mesmo assim". As opções são:
+  1. **Aguardar a análise da Microsoft.** O arquivo foi enviado para revisão e, quando aprovado, deixa de ser bloqueado.
+  2. **Desativar o recurso** em *Segurança do Windows → Controle de aplicativos e do navegador →
+     Configurações do Controle Inteligente de Aplicativos*. Atenção: ele protege contra programas maliciosos e,
+     em algumas versões do Windows, depois de desativado só volta reinstalando ou restaurando o sistema.
+     Faça isso apenas se confiar no programa.
+
 ## Como as letras aparecem
 
 O display só desenha **números de 00 a 99** e **sempre mostra 2 dígitos** (`0` vira `00`, `7` vira `07`).
